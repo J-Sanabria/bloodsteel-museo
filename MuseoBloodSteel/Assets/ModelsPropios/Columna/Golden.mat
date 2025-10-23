@@ -101,7 +101,7 @@ Material:
     - _AlphaClip: 0
     - _AlphaToMask: 0
     - _AmbientMode: 0.367
-    - _AmbientStrength: 0.211
+    - _AmbientStrength: 0.294
     - _BandAA: 1.33
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
@@ -135,7 +135,7 @@ Material:
     - _SrcBlendAlpha: 1
     - _Steps: 2
     - _Surface: 0
-    - _ToonShadowBias: 0.153
+    - _ToonShadowBias: 0.112
     - _WorkflowMode: 0.1
     - _ZWrite: 1
     m_Colors:
