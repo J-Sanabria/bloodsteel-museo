@@ -8,15 +8,7 @@ public class CambioEscenaGaze : MonoBehaviour
 
     public void OnPointerClickXR()
     {
-        if (SceneManager.GetActiveScene().name == "Tutorial")
-        {
-             SceneManager.LoadScene(escenaDestino);
-            return;
-        }
-
-        if (!InventarioManager.Instance.Inicio)
-            InventarioManager.Instance.Inicio = true;
-
+ 
        SceneManager.LoadScene(escenaDestino);
     }
 
