@@ -8,14 +8,14 @@ public class MuseumProgressManager : MonoBehaviour
     public int counter = 0;             // contador de piezas vistas
     public bool debugLog = true;        // para ver los cambios en consola
 
-    [Header("Umbrales de activación")]
+    [Header("Umbrales de activaciï¿½n")]
     public int triggerAnim1 = 3;
     public int triggerAnim2 = 6;
     public int triggerAudio = 9;
 
-    [Header("Referencias de activación")]
-    public Animator anim1;              // animación 1 (puerta, compuerta, etc.)
-    public Animator anim2;              // animación 2 (otra zona o vitrina)
+    [Header("Referencias de activaciï¿½n")]
+    public Animator anim1;              // animaciï¿½n 1 (puerta, compuerta, etc.)
+    public Animator anim2;              // animaciï¿½n 2 (otra zona o vitrina)
     public AudioSource specialAudio;    // audio final o evento sonoro
 
     private bool anim1Triggered = false;
@@ -29,7 +29,7 @@ public class MuseumProgressManager : MonoBehaviour
     }
 
     /// <summary>
-    /// Llama este método desde OnPointerClickXR() en tus objetos del museo
+    /// Llama este mï¿½todo desde OnPointerClickXR() en tus objetos del museo
     /// </summary>
     public void AddCount()
     {
@@ -49,7 +49,7 @@ public class MuseumProgressManager : MonoBehaviour
             if (anim1)
             {
                 anim1.SetTrigger("Activate"); // usa un trigger llamado "Activate"
-                if (debugLog) Debug.Log("Evento 1: Animación 1 activada");
+                if (debugLog) Debug.Log("Evento 1: Animaciï¿½n 1 activada");
             }
             anim1Triggered = true;
         }
@@ -60,7 +60,7 @@ public class MuseumProgressManager : MonoBehaviour
             if (anim2)
             {
                 anim2.SetTrigger("Activate");
-                if (debugLog) Debug.Log("Evento 2: Animación 2 activada");
+                if (debugLog) Debug.Log("Evento 2: Animaciï¿½n 2 activada");
             }
             anim2Triggered = true;
         }
